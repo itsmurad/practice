@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "rentuser",
+    "password": "rentpassword",
+    "database": "rentdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "rentuser",
+    "password": "rentpassword",
+    "database": "rentdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "rentuser",
+    "password": "rentpassword",
+    "database": "rentdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
