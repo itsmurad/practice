@@ -18,7 +18,7 @@ const contentStyle = {
 const { Header, Sider, Content } = Layout;
 
 const App = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  //const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -28,11 +28,11 @@ const App = () => {
 
   return (
     <Layout>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      
         <div className="demo-logo-vertical" />
         <Menu
           theme="dark"
-          mode="inline"
+          mode="horizontal"
           defaultSelectedKeys={['1']}
           items={[
             {
@@ -57,19 +57,11 @@ const App = () => {
             },
           ]}
         />
-      </Sider>
+      
       <Layout>
-        <Header style={{ padding: 0, background: colorBgContainer }}>
-          <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: '16px',
-              width: 64,
-              height: 64,
-            }}
-          />
+        <Header style={{ padding: 0, background: colorBgContainer, display: 'flex', alignItems: 'center' }}>
+          
+          
         </Header>
         <Content style={{ margin: '24px 16px', padding: 24, minHeight: 280, background: colorBgContainer }}>
           
